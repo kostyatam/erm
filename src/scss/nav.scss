@@ -1,0 +1,40 @@
+$nav-bg: rgba(102, 45, 145, 1);
+
+.nav {
+    width: 100%;
+    background-color: $nav-bg;
+    text-align: center;
+    position: relative;
+
+    &:after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 0;
+        height: 1px;
+        width: 100%;
+        background-color: #fff;
+        z-index: 0;
+    }
+}
+
+.nav-menu {
+    display: inline-block;
+    list-style: none;
+    z-index: 1;
+    position: relative;
+    background-color: inherit;
+
+    &__item {
+        display: inline-block;
+        padding: 10px 15px;
+    }
+
+    &__link {
+        color: #fff;
+        text-transform: uppercase;
+        line-height: 1;
+        font-size: 15px;
+        text-decoration: none;
+    }
+}

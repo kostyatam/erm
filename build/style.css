@@ -1,0 +1,68 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+body {
+  font: 300 16px/1.2 sans-serif, Arial;
+  width: 100%; }
+
+.header {
+  width: 100%; }
+  .header:after {
+    content: '';
+    display: block;
+    clear: both; }
+  .header__item {
+    float: left;
+    width: 33.33%; }
+
+.header-contact {
+  display: block; }
+  .header-contact__link {
+    display: inline-block;
+    padding: 5px 10px;
+    text-decoration: none; }
+    .header-contact__link:hover {
+      color: #fff;
+      background-color: rgba(236, 0, 140, 0.78); }
+    .header-contact__link_phone {
+      color: #7E0C6E; }
+
+.header-logo {
+  background-image: url("img/header-logo.png");
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  width: 230px;
+  height: 52px; }
+
+.nav {
+  width: 100%;
+  background-color: #662d91;
+  text-align: center;
+  position: relative; }
+  .nav:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    background-color: #fff;
+    z-index: 0; }
+
+.nav-menu {
+  display: inline-block;
+  list-style: none;
+  z-index: 1;
+  position: relative;
+  background-color: inherit; }
+  .nav-menu__item {
+    display: inline-block;
+    padding: 10px 15px; }
+  .nav-menu__link {
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 1;
+    font-size: 15px;
+    text-decoration: none; }

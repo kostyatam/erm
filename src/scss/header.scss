@@ -1,0 +1,41 @@
+@import '_variables';
+
+.header {
+    width: 100%;
+    @include clearfix;
+
+    &__item {
+        float: left;
+        width: 33.33%;
+    }
+}
+
+.header-contact {
+    display: block;
+
+    &__link {
+        display: inline-block;
+        padding: 5px 10px;
+        text-decoration: none;
+
+        &:hover {
+            color: #fff;
+            background-color: rgba(236, 0, 140, 0.78);
+        }
+
+        &_phone {
+            color: #7E0C6E;
+        }
+    }
+}
+
+.header-cart {
+}
+
+.header-logo {
+    background-image: url('img/header-logo.png');
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    width: 230px;
+    height: 52px;
+}
